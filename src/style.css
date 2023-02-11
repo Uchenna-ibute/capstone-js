@@ -3,28 +3,35 @@
   margin: 0;
   box-sizing: border-box;
 }
-header, footer {
+
+header,
+footer {
   padding: 1rem 3rem;
-  background-color: rgb(36, 35, 35);
+  background-color: rgb(36 35 35);
   color: white;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul {
   display: flex;
   align-items: center;
 }
+
 nav li {
   list-style: none;
   margin: 3px;
 }
+
 .hello {
   display: none;
 }
