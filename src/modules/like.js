@@ -1,7 +1,21 @@
+export const incrementLikes = (index) => {
+  const add = async () => {
+    const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/KHwd97Kg4JUFks1Mpn4d/likes',
+      {
+        method: 'post',
+        body: JSON.stringify({ item_id: index }),
+        headers: { 'content-type': 'application/json' },
+      });
+    const predata = res.text();
+    return predata;
+  };
+  add();
+};
+
 export const likeItem = (value) => {
   value.forEach((item) => {
     const likes = async () => {
-      const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/yKJTMxrmBH7B9XDZt39R/likes');
+      const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/KHwd97Kg4JUFks1Mpn4d/likes');
       const predata = res.json();
       return predata;
     };
@@ -14,18 +28,4 @@ export const likeItem = (value) => {
       });
     });
   });
-};
-
-export const incrementLikes = (index) => {
-  const add = async () => {
-    const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/yKJTMxrmBH7B9XDZt39R/likes',
-      {
-        method: 'post',
-        body: JSON.stringify({ item_id: index }),
-        headers: { 'content-type': 'application/json' },
-      });
-    const predata = res.text();
-    return predata;
-  };
-  add();
 };

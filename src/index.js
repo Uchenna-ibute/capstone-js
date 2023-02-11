@@ -17,4 +17,3 @@ meals().then((data) => {
     return value;
   });
 });
-

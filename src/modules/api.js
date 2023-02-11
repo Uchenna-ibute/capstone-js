@@ -6,7 +6,7 @@ export const meals = async () => {
 
 export const dataid = async () => {
   const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
-  { method: 'post' });
+    { method: 'post' });
   const data = await res.text();
   return data;
 };

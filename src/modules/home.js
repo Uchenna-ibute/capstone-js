@@ -20,18 +20,16 @@ export const display = (meal) => {
   list.appendChild(item);
 };
 
-
-
 export const addLike = (like, index, id) => {
-like.forEach((item, i) => {
-item.addEventListener('click', () => {
-if (i === index) {
-incrementLikes(id);
-const contain = item.parentElement.parentElement;
-const itemlike = contain.querySelector('.like');
-const currentCount = parseInt(itemlike.innerText, 10);
-itemlike.innerText = currentCount + 1;
-}
-});
-});
+  like.forEach((item, i) => {
+    item.addEventListener('click', () => {
+      if (i === index) {
+        incrementLikes(id);
+        const contain = item.parentElement.parentElement;
+        const itemlike = contain.querySelector('.like');
+        const currentCount = parseInt(itemlike.innerText, 10);
+        itemlike.innerText = currentCount + 1;
+      }
+    });
+  });
 };
