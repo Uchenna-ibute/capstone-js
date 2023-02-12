@@ -43,5 +43,6 @@
     "eslint-config-airbnb": "^19.0.4",
     "g": "^2.0.1",
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
