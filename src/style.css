@@ -104,6 +104,14 @@ main {
   list-style: none;
 }
 
+.fa-heart {
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  color: gray;
+}
+
 @media screen and (max-width: 800px) {
   .wrap {
     grid-template-columns: repeat(2, 1fr);
