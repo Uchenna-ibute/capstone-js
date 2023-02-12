@@ -1,5 +1,4 @@
 export const incrementLikes = async (index) => {
-  console.log(index);
   const res = await fetch(
     'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/KHwd97Kg4JUFks1Mpn4d/likes',
     {

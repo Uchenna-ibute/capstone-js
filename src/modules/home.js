@@ -20,7 +20,7 @@ export const display = (meal, likes, index) => {
   list.appendChild(item);
 };
 
-export const addLike = (like, index, id) => {
+export const addLike = (like, index) => {
   like.forEach((item, i) => {
     item.addEventListener('click', () => {
       if (i === index) {
